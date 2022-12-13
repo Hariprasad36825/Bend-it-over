@@ -4,6 +4,7 @@
 A fitness app to book yoga classes online
 
 Workflow Diagram
+
 ![worflow](https://github.com/Hariprasad36825/Bend-it-over/blob/master/readme%20images/workflow.png)
 ## Run Locally
 
