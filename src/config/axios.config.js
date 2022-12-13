@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = 'http://127.0.0.1:8080/'
+const baseUrl = 'https://bend-it-over.onrender.com/'
 
 export const axiosInstance = axios.create({
   baseURL: baseUrl
