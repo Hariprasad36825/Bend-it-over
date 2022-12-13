@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { GetBatches } from '../apis/batch.api'
 import { GetEnrollmentApi, ModifyEnrollmentApi } from '../apis/enrollment.api'
 import '../assets/styles/enroll.style.css'
@@ -49,7 +50,13 @@ export const Enroll = () => {
     return sdf > today ? '🖊 Modify' : `⚠️ pay ₹${amount}`
   }
 
+  const navigate = useNavigate()
   useEffect(() => {
+    if (!localStorage.getItem('AccessToken')) {
+      navigate('/auth')
+      return
+    }
+
     async function myfunc() {
       await ApiWrapper(
         GetEnrollmentApi,
