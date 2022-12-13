@@ -1,0 +1,38 @@
+{
+  "name": "bend-it-over",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format-check": "prettier --check . --ignore-path .gitignore",
+    "format-write": "prettier --write . --ignore-path .gitignore",
+    "lint-check": "eslint .",
+    "lint-fix": "eslint --fix .",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "axios": "^1.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-notifications": "^1.7.4",
+    "react-responsive-modal": "^6.4.1",
+    "react-router-dom": "^6.4.5",
+    "react-toastify": "^9.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@vitejs/plugin-react": "^3.0.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^8.0.2",
+    "prettier": "^2.8.1",
+    "vite": "^4.0.0"
+  }
+}

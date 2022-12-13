@@ -1,0 +1,20 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.p {
+  color: #738391;
+  margin: 0.5rem 0 0.5rem 0.1rem;
+  font-size: 0.9rem;
+  width: 100%;
+  cursor: default;
+}
+
+.input {
+  padding: 0.7rem;
+}
+
+.danger {
+  color: red;
+}

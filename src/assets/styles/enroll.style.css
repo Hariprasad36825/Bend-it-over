@@ -1,0 +1,66 @@
+.bgYoga::after {
+  content: '';
+  background: url(../yoga2.png);
+  opacity: 0.05;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subscriptionContainer {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(75, 75, 75);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-top: 4rem;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.subscriptionContainer .subTab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 320px;
+}
+
+@media only screen and (max-width: 400px) {
+  .subscriptionContainer .subTab {
+    width: 95%;
+  }
+}
+
+.subscriptionContainer .subTab .BatchName {
+  font-size: 1.3rem;
+}
+.subscriptionContainer .subTab .duration {
+  font-size: 0.9rem;
+  color: rgb(75, 75, 75);
+  text-transform: capitalize;
+}
+
+.subscriptionContainer .subTab .right {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.addSubs {
+  color: blue;
+  cursor: pointer;
+  font-size: 1rem;
+}
